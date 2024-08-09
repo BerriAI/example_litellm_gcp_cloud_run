@@ -1,0 +1,16 @@
+general_settings:
+  database_connection_pool_limit: 20
+
+model_list:
+  - model_name: fake-openai-endpoint
+    litellm_params:
+      model: openai/my-fake-model
+      api_key: my-fake-key
+      api_base: https://exampleopenaiendpoint-production.up.railway.app/
+
+litellm_settings:
+  drop_params: True
+  success_callback: ["prometheus"]
+  failure_callback: ["prometheus"]
+  service_callback: ["prometheus_system"]
+
