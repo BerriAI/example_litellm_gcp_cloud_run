@@ -175,19 +175,19 @@ model_list:
       vertex_location: "global"
 
 # --- Third-Party Models on Vertex AI ---
-  - model_name: claude-4-6-opus
+  - model_name: claude-opus-4-6
     litellm_params:
-      model: vertex_ai/claude-opus-4-6@default
+      model: vertex_ai/claude-opus-4-6
       vertex_project: os.environ/PROJECT_ID
       vertex_location: "global"
   
-  - model_name: claude-4-5-opus
-    litellm_params:
-      model: vertex_ai/claude-opus-4-5@20251101
-      vertex_project: os.environ/PROJECT_ID
-      vertex_location: "global"
+  # - model_name: claude-opus-4-5
+  #   litellm_params:
+  #     model: vertex_ai/claude-opus-4-5@20251101
+  #     vertex_project: os.environ/PROJECT_ID
+  #     vertex_location: "global"
   
-  - model_name: claude-4-5-sonnet
+  - model_name: claude-sonnet-4-5
     litellm_params:
       model: vertex_ai/claude-sonnet-4-5@20250929
       vertex_project: os.environ/PROJECT_ID
