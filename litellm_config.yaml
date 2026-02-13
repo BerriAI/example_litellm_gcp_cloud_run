@@ -179,8 +179,6 @@ model_list:
       model: vertex_ai/claude-opus-4-6@default
       vertex_project: os.environ/PROJECT_ID
       vertex_location: "global"
-      input_cost_per_token: 0.000005
-      output_cost_per_token: 0.000025
   
   - model_name: claude-4-5-opus
     litellm_params:
