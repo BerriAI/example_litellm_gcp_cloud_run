@@ -1,6 +1,6 @@
 # Use the database-specific base image
-# FROM ghcr.io/berriai/litellm-database:main-stable
-FROM ghcr.io/berriai/litellm-database:main-v1.81.9.rc.1
+FROM ghcr.io/berriai/litellm-database:main-stable
+# FROM ghcr.io/berriai/litellm-database:main-v1.81.9.rc.1
 
 # Set the working directory to /app
 WORKDIR /app
